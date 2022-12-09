@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Fuhrparkverwaltung;
 
@@ -12,10 +13,10 @@ namespace FuhrparkverwaltungTests
             //Arrange
             int kilometerstand = 0;
             Auto a = new Auto(kilometerstand);
-            int streckeInKilometern = 50;
+            int gefahreneKilometer = 50;
 
             //Act
-            a.Fahren(streckeInKilometern);
+            a.Fahren(gefahreneKilometer);
 
             //Assert
             Assert.AreEqual(50, a.Kilometerstand);
