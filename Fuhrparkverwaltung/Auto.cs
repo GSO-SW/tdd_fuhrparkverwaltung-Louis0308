@@ -12,15 +12,17 @@ namespace Fuhrparkverwaltung
 
         public Auto(int kilometerstand)
         {
-
+            this.kilometerstand = kilometerstand;
         }
 
         public void Fahren(int gefahreneKilometer)
         {
-
+            if(gefahreneKilometer > 0)
+            kilometerstand += gefahreneKilometer;
         }
         public int Kilometerstand
         {
+            
             get { return kilometerstand; }
         }
     }
